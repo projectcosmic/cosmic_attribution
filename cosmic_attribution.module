@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Cosmic Attribution module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function cosmic_attribution_theme() {
+  return [
+    'cosmic_logo' => [
+      'variables' => [],
+    ],
+  ];
+}

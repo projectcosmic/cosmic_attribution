@@ -1,0 +1,13 @@
+{
+    "name": "projectcosmic/cosmic_attribution",
+    "description": "Adds Cosmic Attribution to a Drupal website.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Justin Wong",
+            "email": "justin@cosmic.org.uk",
+            "role": "Developer",
+            "homepage": "https://cosmic.org.uk"
+        }
+    ]
+}

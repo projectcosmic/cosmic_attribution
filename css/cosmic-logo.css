@@ -1,0 +1,48 @@
+/**
+ * @file
+ * Color and interaction styles for the cosmic logo.
+ */
+
+:root {
+  --cosmic-logo-default-halo: #00aae7;
+  --cosmic-logo-active-halo: #00aae7;
+  --cosmic-logo-default-text: #666;
+  --cosmic-logo-active-text: #666;
+}
+
+.c-cosmic-logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c-cosmic-logo__halo {
+  fill: none;
+  stroke: #00aae7;
+  stroke: var(--cosmic-logo-default-halo);
+  stroke-width: 25;
+  stroke-dasharray: 1860 335 1825 4500;
+  transition: stroke-dashoffset 1s cubic-bezier(0.7, 0, 0.3, 1), stroke 0s 0.5s;
+}
+
+.c-cosmic-logo:hover .c-cosmic-logo__halo {
+  stroke-dashoffset: -8510;
+  stroke: var(--cosmic-logo-active-halo);
+}
+
+.c-cosmic-logo__text {
+  font-family: Century Gothic, AppleGothic, Futura, Arial, sans-serif;
+  font-size: 400px;
+  font-weight: 400;
+  fill: #666;
+  fill: var(--cosmic-logo-default-text);
+  transition: fill 0.5s;
+}
+
+.c-cosmic-logo:hover .c-cosmic-logo__text {
+  fill: var(--cosmic-logo-active-text);
+}
+
+.c-cosmic-logo__text--mark {
+  font-size: 90px;
+  font-family: Gotham, sans-serif;
+}

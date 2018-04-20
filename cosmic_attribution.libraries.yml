@@ -1,0 +1,4 @@
+cosmic-logo:
+  css:
+    component:
+      css/cosmic-logo.css: {}
