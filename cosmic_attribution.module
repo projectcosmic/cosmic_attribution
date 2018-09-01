@@ -11,7 +11,9 @@
 function cosmic_attribution_theme() {
   return [
     'cosmic_logo' => [
-      'variables' => [],
+      'variables' => [
+        'title' => t('Website designed and developed by Cosmic')
+      ],
     ],
   ];
 }
