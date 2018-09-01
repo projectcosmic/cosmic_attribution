@@ -16,16 +16,17 @@
 }
 
 .c-cosmic-logo__halo {
+  clip-path: url(#cosmic-logo-halo-clip);
   fill: none;
   stroke: #00aae7;
   stroke: var(--cosmic-logo-default-halo);
   stroke-width: 25;
-  stroke-dasharray: 1860 335 1825 4500;
-  transition: stroke-dashoffset 1s cubic-bezier(0.7, 0, 0.3, 1), stroke 0s 0.5s;
+  stroke-dasharray: 4500;
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.77, 0, 0.175, 1), stroke 0s 0.75s;
 }
 
 .c-cosmic-logo:hover .c-cosmic-logo__halo {
-  stroke-dashoffset: -8510;
+  stroke-dashoffset: -9000;
   stroke: var(--cosmic-logo-active-halo);
 }
 
