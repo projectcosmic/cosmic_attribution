@@ -16,7 +16,6 @@
 }
 
 .c-cosmic-logo__halo {
-  clip-path: url(#cosmic-logo-halo-clip);
   fill: none;
   stroke: #00aae7;
   stroke: var(--cosmic-logo-default-halo);
