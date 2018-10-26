@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 [Unreleased]
 ------------
 
+[1.0.2] - 2018-10-26
+--------------------
+### Fixed
+- Fix Drupal CSS processor breaking clip-path
+
 [1.0.1] - 2018-09-01
 --------------------
 ### Added
