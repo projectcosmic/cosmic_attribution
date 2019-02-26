@@ -18,14 +18,7 @@ class CosmicAttributionBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return [
-      '#theme' => 'cosmic_logo',
-      '#attached' => [
-        'library' => [
-          'cosmic_attribution/cosmic-logo',
-        ],
-      ],
-    ];
+    return ['#theme' => 'cosmic_logo'];
   }
 
 }
