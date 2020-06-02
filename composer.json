@@ -9,5 +9,8 @@
             "role": "Developer",
             "homepage": "https://cosmic.org.uk"
         }
-    ]
+    ],
+    "require": {
+        "drupal/core": "^8 || ^9"
+    }
 }
