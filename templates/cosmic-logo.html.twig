@@ -4,35 +4,24 @@
  * Default theme implementation for the Cosmic logo.
  *
  * Available variables:
- * - title: The accessible title of the link/SVG.
- * - is_link: Whether a link should be printed.
+ * - title: The accessible title of the SVG.
  *
  * @ingroup themable
  */
 #}
 {{ attach_library('cosmic_attribution/cosmic-logo') }}
-
-{% if is_link %}
-  <a href="https://www.cosmic.org.uk" target="_blank" rel="nofollow noopener">
-{% endif %}
-
-  <svg width="67" height="60" viewBox="0 0 1697 1412" role="img" class="c-cosmic-logo" title="{{ title }}">
-    <defs>
-      <clipPath id="cosmic-logo-halo-clip">
-        <path d="M0,0h1697v520H0zM0,900h1697v512H0z" />
-      </clipPath>
-    </defs>
-    <ellipse
-      rx="693" ry="691" cx="848.5" cy="706"
-      transform="rotate(-180 848.5 706)"
-      class="c-cosmic-logo__halo"
-      clip-path="url(#cosmic-logo-halo-clip)"
-    />
-    <text textLength="1554" x="70" y="820" class="c-cosmic-logo__text">cosmic</text>
-    <text textLength="30" x="1617" y="600" class="c-cosmic-logo__text c-cosmic-logo__text--mark">®</text>
-  </svg>
-
-{% if is_link %}
-  </a>
-{% endif %}
-
+<svg width="67" height="60" viewBox="0 0 1697 1412" role="img" class="c-cosmic-logo" title="{{ title }}">
+  <defs>
+    <clipPath id="cosmic-logo-halo-clip">
+      <path d="M0,0h1697v520H0zM0,900h1697v512H0z" />
+    </clipPath>
+  </defs>
+  <ellipse
+    rx="693" ry="691" cx="848.5" cy="706"
+    transform="rotate(-180 848.5 706)"
+    class="c-cosmic-logo__halo"
+    clip-path="url(#cosmic-logo-halo-clip)"
+  />
+  <text textLength="1554" x="70" y="820" class="c-cosmic-logo__text">cosmic</text>
+  <text textLength="30" x="1617" y="600" class="c-cosmic-logo__text c-cosmic-logo__text--mark">®</text>
+</svg>

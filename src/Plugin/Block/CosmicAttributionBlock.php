@@ -3,6 +3,7 @@
 namespace Drupal\cosmic_attribution\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Url;
 
 /**
  * Provides a 'CosmicAttributionBlock' block.
@@ -18,7 +19,16 @@ class CosmicAttributionBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return ['#theme' => 'cosmic_logo'];
+    $url = Url::fromUserInput('https://www.cosmic.org.uk')->setOption('attributes', [
+      'target' => '_blank',
+      'rel' => ['nofollow', 'noreferrer'],
+    ]);
+
+    return [
+      '#type' => 'link',
+      '#url' => $url,
+      '#title' => ['#theme' => 'cosmic_logo'],
+    ];
   }
 
 }
