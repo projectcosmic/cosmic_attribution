@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.3.0] - 2020-08-11
 ### Changed
 - Rework logo linking implementation
 
@@ -39,7 +41,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 - Remove unused git files
 
-[Unreleased]: https://bitbucket.org/projectcosmic/cosmic_attribution/branches/compare/HEAD..1.2.1
+[Unreleased]: https://bitbucket.org/projectcosmic/cosmic_attribution/branches/compare/HEAD..v1.3.0
+[1.3.0]: https://bitbucket.org/projectcosmic/cosmic_attribution/branches/compare/v1.3.0..1.2.1
 [1.2.1]: https://bitbucket.org/projectcosmic/cosmic_attribution/branches/compare/1.2.1..1.2.0
 [1.2.0]: https://bitbucket.org/projectcosmic/cosmic_attribution/branches/compare/1.2.0..1.1.0
 [1.1.0]: https://bitbucket.org/projectcosmic/cosmic_attribution/branches/compare/1.1.0..1.0.2
