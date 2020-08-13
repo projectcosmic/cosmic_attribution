@@ -19,7 +19,7 @@ class CosmicAttributionBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $url = Url::fromUserInput('https://www.cosmic.org.uk')->setOption('attributes', [
+    $url = Url::fromUri('https://www.cosmic.org.uk')->setOption('attributes', [
       'target' => '_blank',
       'rel' => ['nofollow', 'noreferrer'],
     ]);
