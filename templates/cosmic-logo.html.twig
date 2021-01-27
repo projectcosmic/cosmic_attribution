@@ -4,13 +4,15 @@
  * Default theme implementation for the Cosmic logo.
  *
  * Available variables:
- * - title: The accessible title of the SVG.
+ * - title: The accessible label for the SVG.
+ * - title_attributes: Attributes for the label wrapper element.
  *
  * @ingroup themable
  */
 #}
 {{ attach_library('cosmic_attribution/cosmic-logo') }}
-<svg width="67" height="60" viewBox="0 0 1697 1412" role="img" class="c-cosmic-logo" title="{{ title }}">
+<span{{ title_attributes.addClass('visually-hidden') }}>{{ title }}</span>
+<svg width="67" height="60" viewBox="0 0 1697 1412" aria-hidden="true" class="c-cosmic-logo">
   <defs>
     <clipPath id="cosmic-logo-halo-clip">
       <path d="M0,0h1697v520H0zM0,900h1697v512H0z" />
